@@ -1,0 +1,14 @@
+table{border: 2px solid; border-collapse: collapse; text-align: center;}
+th,td{border: 1px solid; padding : 10px 5px;}
+figure{border : 1px solid; text-align: center;width: 450px;height: 250px;}
+img{width: 400px;height: 200px;}
+ul, dt{font-size: 25px; font-weight: bold;line-height : 35px;}
+dd{font-size: 20px; font-weight: initial;line-height : 35px; margin-left : 10px;}
+tr:nth-child(1){background-color: darkgrey}
+td:nth-child(2){line-height: 28px;}
+td:nth-child(3){
+    text-align: left;
+    line-height: 28px;
+    padding : 1px 10px;
+}
+h2{padding: 5px;}
