@@ -1,10 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    padding: 10px;
+}
+ul{
+    margin-top: 15px;
+}
+li{
+    list-style: none;
+    padding: 5px 0;
 
-.subheading{
+}
+span.subheading{
     font-weight: 700;
     font-size: 1.2rem;
 }
 #box{
     background-color: orange;
+    box-sizing: border-box; /* 다른 html이면 #box가 아니라 *에 넣을 것 */
     width: 300px;
     height: 50px;
     border-radius: 5px;
@@ -14,7 +29,10 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 13px;
+    position : relative;
 }
 #x{
-    float: right;
+    position: absolute;
+    right: 20px;
+    /*float: right;*/
 }
