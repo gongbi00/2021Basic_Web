@@ -1,0 +1,75 @@
+@charset "UTF-8";
+:root {
+    --color1: #CCCCFF;
+    --color2: #6495ED;
+    --color3: #40E0D0;
+    --color4: #9FE2BF;
+    --color5: #DE3163;
+    --color6: #FF7F50;
+    --color7: #FFBF00;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animation {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes end{
+    /*
+    to{
+        fill : #DE3163;
+    }
+
+     */
+}
+
+.wrapper svg{
+    /*animation: end 0.5s linear 2s forwards;*/
+}
+.wrapper path{
+    /*
+    stroke-dasharray: 946px;
+    stroke-dashoffset: 946px;
+    */
+    animation: animation 1s linear forwards;
+
+}
+
+.wrapper path:nth-child(1){
+    stroke-dasharray: 947px;
+    stroke-dashoffset: 947px;
+}
+
+.wrapper path:nth-child(2){
+    stroke-dasharray: 736px;
+    stroke-dashoffset: 736px;
+    animation-delay: 0.5s;
+}
+.wrapper path:nth-child(3){
+    stroke-dasharray: 1215px;
+    stroke-dashoffset: 1215px;
+    animation-delay: 1s;
+}

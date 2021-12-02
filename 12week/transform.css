@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+:root {
+    --color1: #CCCCFF;
+    --color2: #6495ED;
+    --color3: #40E0D0;
+    --color4: #9FE2BF;
+    --color5: #DE3163;
+    --color6: #FF7F50;
+    --color7: #FFBF00;
+    --rotate: 0.5turn;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+body{
+    min-height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width:300px;
+    height:500px;
+    background-color: var(--color1);
+    position: relative;
+}
+.wrapper.box{
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+    background-color: var(--color2);
+    transform: translateX(-50%) translateY(-50%) scale(2) rotate(var(--rotate)) skewX(10deg) skewY(10deg);
+    /*margin-top: -50px;
+    margin-left: -50px;*/
+    transition: 3s;
+}
+.wrapper:hover{
+    transform:rotate(0); /*모든 값이 변함 한가지만 바꾸려면 나머지는 그대로 다시 작성해야함*/
+    --rotate:0;
+}
